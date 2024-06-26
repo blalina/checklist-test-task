@@ -1,0 +1,117 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html, body, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem 1.2rem;
+
+    border-radius: 10px;
+
+    background-color: #3579F5;
+}
+
+.block-progress-bar {
+    position: relative;
+}
+
+.block-progress-bar-ring__svg {
+    width: 60px;
+    height: 60px;
+
+    transform: rotate(-90deg);
+}
+
+.block-progress-bar-ring__circle {
+    stroke: #FFFFFF;
+    stroke-linecap: round;
+    fill: transparent;
+}
+
+.circle__background {
+    stroke-width: 1;
+    opacity: 0.5;
+}
+
+.circle__progress {
+    stroke-width: 2;
+    stroke-dasharray: 176;
+    stroke-dashoffset: calc(176 - (176 * 2) / 100);
+}
+
+.block-progress-bar__number {
+    font-size: 20px;
+    line-height: 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.block__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.block__text-container-title {
+    display: flex;
+}
+
+.block__text-title {
+    border-radius: 40px;
+
+    padding: 0 0.9rem;
+
+    background-color: #2364DB;
+}
+
+.block__text-done {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.block__text-next-act, .block__text-title {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.block__button {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #4777ED;
+
+    border: none;
+    border-radius: 6px;
+    white-space: nowrap;
+
+    margin-left: 5vw;
+    padding: 0.6rem 1.6rem;
+    background-color: #F4F8FF;
+}

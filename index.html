@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Тестовое задание "Чеклист"</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Alina Blokhina">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+        <div class="block">
+            <div class="block-progress-bar">
+                <div class="block-progress-bar-ring">
+                    <svg class="block-progress-bar-ring__svg">
+                        <circle class="block-progress-bar-ring__circle circle__background" cx="30" cy="30" r="28" />
+                        <circle class="block-progress-bar-ring__circle circle__progress" cx="30" cy="30" r="28" />
+                    </svg>
+                </div>
+                <div class="block-progress-bar__number">
+                    <span>0/7</span>
+                </div>
+            </div>
+            <div class="block__text">
+                <div class="block__text-container-title">
+                    <p class="block__text-title">
+                        Чеклист
+                    </p>
+                </div>
+                <p class="block__text-done">
+                    Выполнено: 0 из 7 действий
+                </p>
+                <p class="block__text-next-act">
+                    Следующее действие: Созвониться с клиентом до 23.05.24 12:00
+                </p>
+            </div>
+            <button class="block__button">Открыть чеклист</button>
+        </div>
+    </div>
+    </body>
+</html>
